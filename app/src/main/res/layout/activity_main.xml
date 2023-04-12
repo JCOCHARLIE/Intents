@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnsms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="sms"
+        app:layout_constraintBottom_toBottomOf="@+id/btnemail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnemail" />
+
+    <Button
+        android:id="@+id/btnemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="35dp"
+        android:text="email"
+        app:layout_constraintBottom_toTopOf="@+id/btnshare"
+        app:layout_constraintEnd_toEndOf="@+id/btnshare" />
+
+    <Button
+        android:id="@+id/btncamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="camera"
+        app:layout_constraintStart_toStartOf="@+id/btnsms"
+        app:layout_constraintTop_toBottomOf="@+id/btnsms" />
+
+    <Button
+        android:id="@+id/btnshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="269dp"
+        android:text="share"
+        app:layout_constraintEnd_toEndOf="@+id/btncall"
+        app:layout_constraintStart_toStartOf="@+id/btncall"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnmpesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="mpesa"
+        app:layout_constraintStart_toStartOf="@+id/btncamera"
+        app:layout_constraintTop_toBottomOf="@+id/btncamera" />
+
+    <Button
+        android:id="@+id/btncall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="49dp"
+        android:text="call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnshare" />
+
+    <Button
+        android:id="@+id/btnwebsite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="58dp"
+        android:text="website"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnmpesa" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/btncall"
+        app:layout_constraintStart_toStartOf="@+id/btnemail"
+        app:layout_constraintTop_toBottomOf="@+id/btncall" />
+</androidx.constraintlayout.widget.ConstraintLayout>
